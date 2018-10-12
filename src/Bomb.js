@@ -13,7 +13,7 @@ export default class Bomb extends Component {
   render(){
     return (
       <div>
-      {this.props.initialCount ? `${this.state.secondsLeft} seconds left before I go boom!` : 'Boom!'}
+      {this.state.secondsLeft ? `${this.state.secondsLeft} seconds left before I go boom!` : 'Boom!'}
       </div>
     )
   }
